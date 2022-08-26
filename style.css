@@ -1,0 +1,166 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #f5e0e5;
+  background-image: url("aset/bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+.music-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.music-img > h3 {
+  margin-top: 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.music-img > img {
+  border-radius: 50%;
+  width: 130px;
+}
+
+.music-title {
+  text-align: center;
+  margin: 10px 20px 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card input[type="range"] {
+  -webkit-appearance: none !important;
+  margin: 0;
+  padding: 0;
+  background: #f2eae4;
+  width: 270px;
+  height: 5px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #ff3677;
+  height: 5px;
+  width: 7px;
+  border-radius: 50%;
+  box-shadow: -100vw 0 0 100vw #d9b2bc;
+}
+
+.card .music-elemen {
+  position: absolute;
+  left: 50%;
+  top: 240px;
+  transform: translateX(-50%);
+}
+
+/* .card .music-elemen input[type="range"] {
+  height: 5px;
+  width: 230px;
+  margin: 0 0 10px 0;
+} */
+
+/* .card .music-elemen input[type="range"]::-webkit-slider-thumb {
+  height: 5px;
+  width: 7px;
+} */
+
+.card .music-elemen .current-time {
+  position: absolute;
+  margin-top: 12px;
+  left: -1px;
+  top: 50%;
+  /* transform: translateY(-30%); */
+  font-size: 12px;
+  color: black;
+}
+
+.card .music-elemen .duration {
+  position: absolute;
+  margin-top: 12px;
+  right: -1px;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  font-size: 12px;
+  color: black;
+}
+
+.card .music-elemen .elemen {
+  position: absolute;
+  left: 48%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s;
+  color: rgb(49, 49, 49);
+}
+
+.card .music-elemen .elemen .play i,
+.card .music-elemen .elemen .pause i {
+  font-size: 60px;
+  position: absolute;
+  /* color: white; */
+}
+
+.card .music-elemen .elemen .previous i {
+  font-size: 45px;
+  position: absolute;
+  /* left: -1%; */
+  /* top: 100; */
+  transform: translate(-130%, 20%);
+}
+
+.card .music-elemen .elemen .next i {
+  font-size: 45px;
+  position: absolute;
+  /* left: -1%; */
+  /* top: 100; */
+  transform: translate(160%, 20%);
+}
+
+/* .card .music-elemen .elemen .previous i,
+.card .music-elemen .elemen .play i,
+.card .music-elemen .elemen .next i {
+  font-size: 36px;
+  position: absolute;
+}
+
+.card .music-elemen .elemen .previous i {
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+} */
